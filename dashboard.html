@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Parking Management System</title>
+    <link rel="stylesheet" href="dash.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Parking Management Dashboard</h1>
+        </header>
+        <nav class="menu-bar">
+            <a href="home.html" id="home-link" class="menu-button">Home</a>
+            <a href="dashboard.html" id="dashboard-link" class="menu-button">Dashboard</a>
+            <a href="booking.html" id="booking-link" class="menu-button">Book Parking Spot</a>
+            <a href="realtime.html" id="realtime-link" class="menu-button">Real-Time Track</a>
+            <a href="report.html" id="report-link" class="menu-button">Generate Report</a>
+        </nav>
+        
+        <p>Last Updated: <span id="last-updated">May 26, 2024 12:00 PM</span></p>
+
+        <section class="kpi-section">
+            <div class="kpi">
+                <h2>Total Spaces</h2>
+                <p id="total-spaces">200</p>
+            </div>
+            <div class="kpi">
+                <h2>Occupied Spaces</h2>
+                <p id="occupied-spaces">120</p>
+            </div>
+            <div class="kpi">
+                <h2>Available Spaces</h2>
+                <p id="available-spaces">80</p>
+            </div>
+            <div class="kpi">
+                <h2>Occupancy Rate</h2>
+                <p id="occupancy-rate">60%</p>
+            </div>
+        </section>
+
+        <section class="charts-section">
+            <div class="chart" id="occupancy-trend">
+                <h3>Occupancy Trends</h3>
+                <canvas id="occupancyChart"></canvas>
+            </div>
+            <div class="chart" id="revenue-trend">
+                <h3>Revenue Trends</h3>
+                <canvas id="revenueChart"></canvas>
+            </div>
+        </section>
+
+        <section class="details-section">
+            <div class="details">
+                <h3>Frequent Users</h3>
+                <ul id="frequent-users">
+                    <li>User 1</li>
+                    <li>User 2</li>
+                    <li>User 3</li>
+                </ul>
+            </div>
+            <div class="details">
+                <h3>Vehicle Types</h3>
+                <ul id="vehicle-types">
+                    <li>Cars: 150</li>
+                    <li>Motorcycles: 30</li>
+                    <li>Electric Vehicles: 20</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="alerts-section">
+            <div class="alert" id="capacity-alert">
+                <h3>Capacity Alert</h3>
+                <p>No alerts</p>
+            </div>
+            <div class="alert" id="overstay-alert">
+                <h3>Overstay Alert</h3>
+                <p>No alerts</p>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-content">
+                <h3>Contact Us</h3>
+                <p>If you have any questions or need assistance, feel free to reach out to us:</p>
+                <p>Email: <a href="mailto:support@parkingmanagement.com">support@parkingmanagement.com</a></p>
+                <p>Phone: (123) 456-7890</p>
+                <p>Address: 123 Parking St, City, Country</p>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Parking Management System. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="dash.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</body>
+</html>
